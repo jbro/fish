@@ -14,3 +14,7 @@ set fish_plugins brew rvm
 
 # Load oh-my-fish configuration.
 . $fish_path/oh-my-fish.fish
+
+for dir in ~/local/*
+  set -x PATH $PATH {$dir}/bin
+end
